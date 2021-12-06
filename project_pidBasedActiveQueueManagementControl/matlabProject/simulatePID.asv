@@ -1,0 +1,4 @@
+function [finalT,finalX,integralError] = simulatePID(t0,tf,linkCapacity,desiredQueueLength,numberOfFlows,Kp,Ki,Kd)
+    % do the AQM simulation
+    [finalT,finalX,integralError] = aqm_sim(t0,tf,linkCapacity,desiredQueueLength,numberOfFlows,2,Kp,Ki,Kd);
+end

@@ -1,0 +1,4 @@
+function [finalT,finalX,integralError] = simulateRED(t0,tf,linkCapacity,desiredQueueLength,numberOfFlows)
+    % do the AQM simulation
+    [finalT,finalX,integralError] = aqm_sim(t0,tf,linkCapacity,desiredQueueLength,numberOfFlows,1,0,0,0);
+end %function [finalT,finalX,integralError] = simulateRED(t0,tf,linkCapacity,desiredQueueLength,numberOfFlows)
